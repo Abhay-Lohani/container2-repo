@@ -1,7 +1,10 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'us-central1-docker.pkg.dev/your-project-id/my-repo/container2:latest', '.']
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/csci-5409new/my-repo/container2:latest', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'us-central1-docker.pkg.dev/your-project-id/my-repo/container2:latest']
+    args: ['push', 'us-central1-docker.pkg.dev/csci-5409new/my-repo/container2:latest']
 images:
-  - 'us-central1-docker.pkg.dev/your-project-id/my-repo/container2:latest'
+  - 'us-central1-docker.pkg.dev/csci-5409new/my-repo/container2:latest'
+
+options:
+  logging: 'NONE'  # No logs generated
