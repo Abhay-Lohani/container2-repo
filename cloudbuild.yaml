@@ -7,4 +7,4 @@ images:
   - 'us-central1-docker.pkg.dev/csci-5409new/my-repo/container2:latest'
 
 options:
-  logging: 'NONE'  # No logs generated
+  logging: 'CLOUD_LOGGING_ONLY'  # Log only to Cloud Logging
